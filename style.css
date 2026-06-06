@@ -861,14 +861,46 @@ ul.legend li {
   border-radius: 50%;
 }
 
-.emotion-dot:nth-child(1) { top: 0px;   left: 106px; background-color: #9ba893; }
-.emotion-dot:nth-child(2) { top: 26px;  left: 186px; background-color: #d4a86a; }
-.emotion-dot:nth-child(3) { top: 106px; left: 212px; background-color: #c9a59c; }
-.emotion-dot:nth-child(4) { top: 186px; left: 186px; background-color: #8fa0a8; }
-.emotion-dot:nth-child(5) { top: 212px; left: 106px; background-color: #a39b8c; }
-.emotion-dot:nth-child(6) { top: 186px; left: 26px;  background-color: #b07058; }
-.emotion-dot:nth-child(7) { top: 106px; left: 0px;   background-color: #b09aa8; }
-.emotion-dot:nth-child(8) { top: 26px;  left: 26px;  background-color: #8a8275; }
+.emotion-dot:nth-child(1) {
+  top: 0px;
+  left: 106px;
+  background-color: #9ba893;
+}
+.emotion-dot:nth-child(2) {
+  top: 26px;
+  left: 186px;
+  background-color: #d4a86a;
+}
+.emotion-dot:nth-child(3) {
+  top: 106px;
+  left: 212px;
+  background-color: #c9a59c;
+}
+.emotion-dot:nth-child(4) {
+  top: 186px;
+  left: 186px;
+  background-color: #8fa0a8;
+}
+.emotion-dot:nth-child(5) {
+  top: 212px;
+  left: 106px;
+  background-color: #a39b8c;
+}
+.emotion-dot:nth-child(6) {
+  top: 186px;
+  left: 26px;
+  background-color: #b07058;
+}
+.emotion-dot:nth-child(7) {
+  top: 106px;
+  left: 0px;
+  background-color: #b09aa8;
+}
+.emotion-dot:nth-child(8) {
+  top: 26px;
+  left: 26px;
+  background-color: #8a8275;
+}
 
 .emotion-label {
   position: absolute;
@@ -924,8 +956,12 @@ ul.legend li {
   border: 1px solid #ccc;
 }
 
-.cal-dot.filled { border: none; }
-.cal-dot.today  { border: 1.5px dashed #888; }
+.cal-dot.filled {
+  border: none;
+}
+.cal-dot.today {
+  border: 1.5px dashed #888;
+}
 
 /* ── 책장 ── */
 .bookshelf-wrap {
@@ -1001,7 +1037,382 @@ ul.legend li {
 /* =========================
    추천 콘텐츠 - recommend.html
 ========================= */
+/* style.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+/* ── NAV ── */
+nav {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  /* 첫 번째 코드의 헤더 배경색과 조화를 이루거나 중복을 피하기 위해 유지하되, 필요시 수정 가능 */
+  border-bottom: 1px solid #ddd8ce;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #2a2a2a;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.nav-logo-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2.5px solid #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+}
+
+.nav-logo-text em {
+  font-style: italic;
+  color: #a08c74;
+  margin-left: 4px;
+  font-weight: 400;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 0.88rem;
+  color: #7a6a52;
+  padding: 6px 14px;
+  border-radius: 999px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #2a2a2a;
+}
+
+.nav-links .active-link {
+  background-color: #2a2a2a;
+  color: #f0ece4;
+  padding: 7px 18px;
+  border-radius: 999px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* 활성 링크 아래 점 */
+.nav-links .active-link::after {
+  content: "•";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.4rem;
+  color: #f0ece4;
+  opacity: 0.7;
+}
+
+/* ── HERO ── */
+.hero {
+  padding: 80px 80px 48px;
+}
+
+.hero-eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  color: #a08c74;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.hero-body {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.hero-headline {
+  font-size: 3.2rem;
+  line-height: 1.3;
+  flex: 1;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.hero-headline .accent {
+  color: #7a6a52;
+}
+
+.hero-desc {
+  flex: 1;
+  max-width: 420px;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  padding-left: 20px;
+  border-left: 3px solid #b8a890;
+  color: #6e5e4a;
+  font-weight: 300;
+}
+
+/* ── FILTER BAR ── */
+.filter-bar {
+  padding: 0 80px 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #d8d2c8;
+  margin-top: 40px;
+}
+
+.filter-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: #a08c74;
+  margin-right: 6px;
+  font-style: italic;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1.5px solid #c8c0b2;
+  background-color: transparent;
+  font-size: 0.83rem;
+  cursor: pointer;
+  color: #7a6a52;
+  transition: all 0.22s;
+}
+
+.filter-btn:hover {
+  border-color: #a08c74;
+  color: #2a2a2a;
+}
+
+.filter-btn.active {
+  background-color: #2a2a2a;
+  color: #f0ece4;
+  border-color: #2a2a2a;
+}
+
+/* ── SECTION ── */
+.section {
+  padding: 64px 80px 0;
+}
+
+.section-header {
+  margin-bottom: 32px;
+}
+
+.section-num {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: #a08c74;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.section-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2a2a2a;
+}
+
+.section-title .keyword {
+  color: #a08c74;
+}
+
+.section-sub {
+  font-size: 0.82rem;
+  color: #a08c74;
+  font-style: italic;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #d8d2c8;
+  margin-top: 16px;
+}
+
+/* ── CARD GRID ── */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+  padding: 32px 0 80px;
+}
+
+.card {
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #faf7f2;
+  border: 1px solid #ddd8ce;
+  cursor: pointer;
+  transition:
+    transform 0.28s,
+    box-shadow 0.28s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(90, 70, 50, 0.13);
+}
+
+/* ── CARD THUMB ── */
+.card-thumb {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px 14px 0 0;
+  overflow: hidden;
+}
+
+.card-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  background-color: rgba(255, 255, 255, 0.28);
+  color: #fff;
+}
+
+.card-link-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.thumb-emoji {
+  font-size: 3.5rem;
+  opacity: 0.8;
+}
+
+/* ── 섹션별 썸네일 배경색 ── */
+.thumb-sleep-moon {
+  background-color: #6b8fa3;
+}
+.thumb-sleep-rain {
+  background-color: #4e6e7e;
+}
+.thumb-sleep-book {
+  background-color: #3d3155;
+}
+.thumb-mind-focus {
+  background-color: #7d7a6a;
+}
+.thumb-mind-essay {
+  background-color: #8c6355;
+}
+.thumb-mind-wave {
+  background-color: #6e8572;
+}
+.thumb-self-ted {
+  background-color: #b58a8a;
+}
+.thumb-self-book {
+  background-color: #5c3d5c;
+}
+.thumb-self-talk {
+  background-color: #9e8a5a;
+}
+.thumb-rel-book {
+  background-color: #a0614e;
+}
+.thumb-rel-video {
+  background-color: #736a5a;
+}
+.thumb-rel-essay {
+  background-color: #9988aa;
+}
+.thumb-low-book {
+  background-color: #4e6845;
+}
+.thumb-low-video {
+  background-color: #7a7060;
+}
+.thumb-low-essay {
+  background-color: #807a6e;
+}
+.thumb-comfort-book1 {
+  background-color: #6e8572;
+}
+.thumb-comfort-video {
+  background-color: #9e7455;
+}
+.thumb-comfort-book2 {
+  background-color: #5e5548;
+}
+
+/* ── CARD BODY ── */
+.card-body {
+  padding: 20px 22px 24px;
+}
+
+.card-source {
+  font-size: 0.76rem;
+  color: #a08c74;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.card-title {
+  font-size: 1.02rem;
+  line-height: 1.45;
+  margin-bottom: 10px;
+  color: #2a2a2a;
+  font-weight: 500;
+}
+
+.card-desc {
+  font-size: 0.83rem;
+  line-height: 1.75;
+  color: #8a7a68;
+  font-weight: 300;
+}
+
+.bottom-space {
+  height: 100px;
+}
 /* =========================
    푸터
 ========================= */
