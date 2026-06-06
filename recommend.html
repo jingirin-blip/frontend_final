@@ -30,460 +30,304 @@
     </header>
 
     <!-- 메인 -->
-    <main class="main">
-      <!doctype html>
-      <html lang="ko">
-        <head>
-          <meta charset="UTF-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <title>아지트 Azit — 추천 콘텐츠</title>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500&display=swap"
-            rel="stylesheet"
-          />
-          <link rel="stylesheet" href="style.css" />
-        </head>
-        <body>
-          <!-- HERO -->
-          <section class="hero">
-            <p class="hero-eyebrow">— THE BOOKSHELF · 책장 —</p>
-            <div class="hero-body">
-              <h1 class="hero-headline">
-                흔들리는 어떤 날엔,<br />
-                <span class="accent">책장 앞에서</span><br />
-                한 권 꺼내 들고.
-              </h1>
-              <p class="hero-desc">
-                아지트의 책장에는, 가만히 들여다본 마음에 어울리는 글과 이야기가
-                꽂혀 있어요. 여섯 가지 상황 중 하나를 골라 보세요. 카드를 누르면
-                영상이나 글이 새 창에서 열립니다.
-              </p>
-            </div>
-          </section>
+ <main class="main">
 
-          <!-- FILTER -->
-          <div class="filter-bar">
-            <span class="filter-label">— FILTER —</span>
-            <button
-              class="filter-btn active"
-              onclick="filterSection('all', this)"
-            >
-              전체
-            </button>
-            <button class="filter-btn" onclick="filterSection('sleep', this)">
-              잠들기 어려운 밤
-            </button>
-            <button class="filter-btn" onclick="filterSection('mind', this)">
-              마음이 답답할 때
-            </button>
-            <button class="filter-btn" onclick="filterSection('self', this)">
-              자존감이 낮아질 때
-            </button>
-            <button
-              class="filter-btn"
-              onclick="filterSection('relation', this)"
-            >
-              관계가 힘들 때
-            </button>
-            <button class="filter-btn" onclick="filterSection('low', this)">
-              무기력할 때
-            </button>
-            <button class="filter-btn" onclick="filterSection('comfort', this)">
-              위로가 필요할 때
-            </button>
-          </div>
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-eyebrow">— THE BOOKSHELF · 책장 —</p>
+    <div class="hero-body">
+      <h1 class="hero-headline">
+        흔들리는 어떤 날엔,<br />
+        <span class="accent">책장 앞에서</span><br />
+        한 권 꺼내들고.
+      </h1>
+      <p class="hero-desc">
+        아지트의 책장에는, 가만히 들여다본 마음에 어울리는 글과 이야기가
+        꽂혀 있어요. 여섯 가지 상황 중 하나를 골라 보세요. 카드를 누르면
+        영상이나 글이 새 창에서 열립니다.
+      </p>
+    </div>
+  </section>
 
-          <!-- 01 잠들기 어려운 밤 -->
-          <section class="section" data-section="sleep">
-            <div class="section-header">
-              <p class="section-num">— 01 —</p>
-              <div class="section-row">
-                <h2 class="section-title">
-                  잠들기 어려운 <span class="keyword">밤,</span>
-                </h2>
-                <span class="section-sub">생각이 자꾸 꼬리를 무는 밤에</span>
-              </div>
-              <div class="section-divider"></div>
-            </div>
-            <div class="card-grid">
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-sleep-moon">
-                  <span class="card-badge">VIDEO</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">🌙</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">Sleep Meditation · Calm</p>
-                  <h3 class="card-title">밤의 호흡을 따라가는 10분 가이드</h3>
-                  <p class="card-desc">
-                    생각이 멈추지 않는 밤, 호흡에 천천히 닻을 내리는 짧은 명상.
-                  </p>
-                </div>
-              </div>
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-sleep-rain">
-                  <span class="card-badge">VIDEO</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">🌧️</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">Rain Sounds · 8 Hours</p>
-                  <h3 class="card-title">밤새 잔잔히 흐르는 빗소리</h3>
-                  <p class="card-desc">
-                    잠을 부르는 가장 단정한 백색소음. 머리맡에 두고 흘려두세요.
-                  </p>
-                </div>
-              </div>
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-sleep-book">
-                  <span class="card-badge">BOOK</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">📖</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">알랭 드 보통</p>
-                  <h3 class="card-title">『잠 못 드는 밤을 위한 철학』</h3>
-                  <p class="card-desc">
-                    불안과 함께하는 새벽을 다정하게 보내는 법, 작가 특유의
-                    산문식 철학.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+  <!-- 01 잠들기 어려운 밤 -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-row">
+        <h2 class="section-title">잠들기 어려운 <span class="keyword">밤,</span></h2>
+      </div>
+      <div class="section-divider"></div>
+    </div>
+    <div class="card-grid">
 
-          <!-- 02 마음이 답답한 날 -->
-          <section class="section" data-section="mind">
-            <div class="section-header">
-              <p class="section-num">— 02 —</p>
-              <div class="section-row">
-                <h2 class="section-title">
-                  마음이 <span class="keyword">답답한 날,</span>
-                </h2>
-                <span class="section-sub">설명할 수 없이 가슴이 무거울 때</span>
-              </div>
-              <div class="section-divider"></div>
-            </div>
-            <div class="card-grid">
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-mind-focus">
-                  <span class="card-badge">VIDEO</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">🎯</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">TED · Andy Puddicombe</p>
-                  <h3 class="card-title">하루 10분이면 충분합니다</h3>
-                  <p class="card-desc">
-                    마음이 산만한 날, 짧은 명상이 어떻게 생각의 결을 정돈해
-                    주는지에 관한 강연.
-                  </p>
-                </div>
-              </div>
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-mind-essay">
-                  <span class="card-badge">ESSAY</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">✉️</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">Brunch · 마음</p>
-                  <h3 class="card-title">답답한 마음은 꺼내야 가벼워진다</h3>
-                  <p class="card-desc">
-                    말하지 못한 감정을 글로 적는 것만으로도, 숨통이 트이는 이유.
-                  </p>
-                </div>
-              </div>
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-mind-wave">
-                  <span class="card-badge">PODCAST</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">🌊</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">심리학자 김경일</p>
-                  <h3 class="card-title">"감정이라는 신호를 읽는 법"</h3>
-                  <p class="card-desc">
-                    부정적 감정이 왜 오는지, 그 의미를 인지과학으로 풀어내는
-                    강의.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+      <a href="https://youtu.be/X901on9pDEo?si=QWXMNjNe5lCeHGEf" target="_blank" class="card">
+        <div class="card-thumb thumb-sleep-moon">
+          <span class="thumb-emoji">🌙</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">Sleep Meditation · Calm</p>
+          <h3 class="card-title">밤의 호흡을 따라가는 10분 가이드</h3>
+          <p class="card-desc">생각이 멈추지 않는 밤, 호흡에 천천히 닻을 내리는 짧은 명상.</p>
+        </div>
+      </a>
 
-          <!-- 03 자존감이 낮아질 때 -->
-          <section class="section" data-section="self">
-            <div class="section-header">
-              <p class="section-num">— 03 —</p>
-              <div class="section-row">
-                <h2 class="section-title">
-                  자존감이 <span class="keyword">낮아질 때,</span>
-                </h2>
-                <span class="section-sub"
-                  >나를 다시 일으켜 세우는 이야기들</span
-                >
-              </div>
-              <div class="section-divider"></div>
-            </div>
-            <div class="card-grid">
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-self-ted">
-                  <span class="card-badge">VIDEO</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">💬</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">TED · Brené Brown</p>
-                  <h3 class="card-title">
-                    취약함의 힘 (The Power of Vulnerability)
-                  </h3>
-                  <p class="card-desc">
-                    부족함을 인정하는 것이 오히려 용기임을 깨닫게 해주는 강연.
-                  </p>
-                </div>
-              </div>
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-self-book">
-                  <span class="card-badge">BOOK</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">📗</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">윤홍균</p>
-                  <h3 class="card-title">『자존감 수업』</h3>
-                  <p class="card-desc">
-                    낮아진 자존감을 천천히 회복하는 52가지 연습.
-                  </p>
-                </div>
-              </div>
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-self-talk">
-                  <span class="card-badge">PODCAST</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">🎙️</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">무너지지 않는 나</p>
-                  <h3 class="card-title">나에게 다정한 말 한 마디</h3>
-                  <p class="card-desc">
-                    스스로에게 가혹한 당신에게 건네는, 조금 더 부드러운 내면의
-                    언어.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+      <a href="https://youtu.be/lQ0fS2meTYQ?si=melb-NnSClcm9Lqv" target="_blank" class="card">
+        <div class="card-thumb thumb-sleep-rain">
+          <span class="thumb-emoji">🌧️</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">Rain Sounds · 8 Hours</p>
+          <h3 class="card-title">밤새 잔잔히 흐르는 빗소리</h3>
+          <p class="card-desc">잠을 부르는 가장 단정한 백색소음. 머리맡에 두고 흘려두세요.</p>
+        </div>
+      </a>
 
-          <!-- 04 관계가 힘들 때 -->
-          <section class="section" data-section="relation">
-            <div class="section-header">
-              <p class="section-num">— 04 —</p>
-              <div class="section-row">
-                <h2 class="section-title">
-                  관계가 <span class="keyword">힘들 때,</span>
-                </h2>
-                <span class="section-sub"
-                  >사람 때문에 지쳤을 때 펼쳐보는 것들</span
-                >
-              </div>
-              <div class="section-divider"></div>
-            </div>
-            <div class="card-grid">
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-rel-book">
-                  <span class="card-badge">BOOK</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">📕</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">최광현</p>
-                  <h3 class="card-title">『가족의 두 얼굴』</h3>
-                  <p class="card-desc">
-                    가장 가까운 관계에서 왜 상처받는지를 심리학으로 풀어내는 책.
-                  </p>
-                </div>
-              </div>
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-rel-video">
-                  <span class="card-badge">VIDEO</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">🤝</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">유튜브 · 오은영 박사</p>
-                  <h3 class="card-title">관계를 망치는 말, 살리는 말</h3>
-                  <p class="card-desc">
-                    어떤 말 한마디가 관계를 흔드는지, 구체적인 사례로 배우는
-                    대화법.
-                  </p>
-                </div>
-              </div>
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-rel-essay">
-                  <span class="card-badge">ESSAY</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">🌸</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">Brunch · 관계</p>
-                  <h3 class="card-title">멀어지는 것도 관계의 한 방식입니다</h3>
-                  <p class="card-desc">
-                    억지로 붙들지 않아도 된다고, 조용히 허락해주는 글.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+      <a href="https://search.shopping.naver.com/book/catalog/59656780365?fromwhere=people" target="_blank" class="card">
+        <div class="card-thumb thumb-sleep-book">
+          <span class="thumb-emoji">📖</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">알랭 드 보통</p>
+          <h3 class="card-title">『잠 못 드는 밤을 위한 철학』</h3>
+          <p class="card-desc">불안과 함께하는 새벽을 다정하게 보내는 법, 작가 특유의 산문식 철학.</p>
+        </div>
+      </a>
 
-          <!-- 05 무기력할 때 -->
-          <section class="section" data-section="low">
-            <div class="section-header">
-              <p class="section-num">— 05 —</p>
-              <div class="section-row">
-                <h2 class="section-title">
-                  무기력이 <span class="keyword">찾아올 때,</span>
-                </h2>
-                <span class="section-sub">아무것도 하기 싫은 날의 동반자</span>
-              </div>
-              <div class="section-divider"></div>
-            </div>
-            <div class="card-grid">
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-low-book">
-                  <span class="card-badge">BOOK</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">🌿</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">박진영</p>
-                  <h3 class="card-title">『나는 왜 게으른가』</h3>
-                  <p class="card-desc">
-                    게으름이 의지의 문제가 아닌 이유를 심리학으로 설명하는 책.
-                  </p>
-                </div>
-              </div>
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-low-video">
-                  <span class="card-badge">VIDEO</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">🚶</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">정신과의사 양재웅</p>
-                  <h3 class="card-title">"움직이지 못하는 날을 살아내는 법"</h3>
-                  <p class="card-desc">
-                    의지가 아닌 환경의 문제로서, 무기력을 다루는 부드러운
-                    방법들.
-                  </p>
-                </div>
-              </div>
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-low-essay">
-                  <span class="card-badge">ESSAY</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">📄</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">Brunch · 무기력</p>
-                  <h3 class="card-title">아무것도 안 한 하루도 충분합니다</h3>
-                  <p class="card-desc">
-                    쉬는 일에 죄책감을 느끼는 우리에게 건네는 단정한 위로.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+    </div>
+  </section>
 
-          <!-- 06 조용한 위로가 필요할 때 -->
-          <section class="section" data-section="comfort">
-            <div class="section-header">
-              <p class="section-num">— 06 —</p>
-              <div class="section-row">
-                <h2 class="section-title">
-                  조용한 위로가 <span class="keyword">필요할 때,</span>
-                </h2>
-                <span class="section-sub">아무 말 없이 옆에 있어주는 글들</span>
-              </div>
-              <div class="section-divider"></div>
-            </div>
-            <div class="card-grid">
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-comfort-book1">
-                  <span class="card-badge">BOOK</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">🌍</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">류시화</p>
-                  <h3 class="card-title">『지구별 여행자』</h3>
-                  <p class="card-desc">
-                    길 위에서 만난 작은 이야기들이 마음에 부드러운 자국을
-                    남깁니다.
-                  </p>
-                </div>
-              </div>
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-comfort-video">
-                  <span class="card-badge">VIDEO</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">🎵</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">시낭송 모음</p>
-                  <h3 class="card-title">잠들기 전 듣는 시 한 편</h3>
-                  <p class="card-desc">
-                    담백한 목소리로 천천히 읊는 시들. 헤드폰 끼고 가만히
-                    들어보세요.
-                  </p>
-                </div>
-              </div>
-              <div class="card" onclick="window.open('#', '_blank')">
-                <div class="card-thumb thumb-comfort-book2">
-                  <span class="card-badge">BOOK</span>
-                  <span class="card-link-icon">↗</span>
-                  <span class="thumb-emoji">📙</span>
-                </div>
-                <div class="card-body">
-                  <p class="card-source">폴커 키츠 외</p>
-                  <h3 class="card-title">『마음의 법칙』</h3>
-                  <p class="card-desc">
-                    왜 우리는 그렇게 느끼는가. 일상의 감정을 심리학으로 풀어
-                    보는 안내서.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+  <!-- 02 마음이 답답한 날 -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-row">
+        <h2 class="section-title">마음이 <span class="keyword">답답한 날,</span></h2>
+      </div>
+      <div class="section-divider"></div>
+    </div>
+    <div class="card-grid">
 
-          <div class="bottom-space"></div>
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-mind-focus">
+          <span class="thumb-emoji">🎯</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">TED · Andy Puddicombe</p>
+          <h3 class="card-title">하루 10분이면 충분합니다</h3>
+          <p class="card-desc">마음이 산만한 날, 짧은 명상이 어떻게 생각의 결을 정돈해 주는지에 관한 강연.</p>
+        </div>
+      </a>
 
-          <script>
-            function filterSection(key, btn) {
-              var buttons = document.querySelectorAll(".filter-btn");
-              for (var i = 0; i < buttons.length; i++) {
-                buttons[i].classList.remove("active");
-              }
-              btn.classList.add("active");
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-mind-essay">
+          <span class="thumb-emoji">✉️</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">Brunch · 마음</p>
+          <h3 class="card-title">답답한 마음은 꺼내야 가벼워진다</h3>
+          <p class="card-desc">말하지 못한 감정을 글로 적는 것만으로도, 숨통이 트이는 이유.</p>
+        </div>
+      </a>
 
-              var sections = document.querySelectorAll(
-                ".section[data-section]",
-              );
-              for (var i = 0; i < sections.length; i++) {
-                if (key === "all" || sections[i].dataset.section === key) {
-                  sections[i].style.display = "";
-                } else {
-                  sections[i].style.display = "none";
-                }
-              }
-            }
-          </script>
-        </body>
-      </html>
-    </main>
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-mind-wave">
+          <span class="thumb-emoji">🌊</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">심리학자 김경일</p>
+          <h3 class="card-title">"감정이라는 신호를 읽는 법"</h3>
+          <p class="card-desc">부정적 감정이 왜 오는지, 그 의미를 인지과학으로 풀어내는 강의.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- 03 자존감이 낮아질 때 -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-row">
+        <h2 class="section-title">자존감이 <span class="keyword">낮아질 때,</span></h2>
+      </div>
+      <div class="section-divider"></div>
+    </div>
+    <div class="card-grid">
+
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-self-ted">
+          <span class="thumb-emoji">💬</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">TED · Brené Brown</p>
+          <h3 class="card-title">취약함의 힘 (The Power of Vulnerability)</h3>
+          <p class="card-desc">부족함을 인정하는 것이 오히려 용기임을 깨닫게 해주는 강연.</p>
+        </div>
+      </a>
+
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-self-book">
+          <span class="thumb-emoji">📗</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">윤홍균</p>
+          <h3 class="card-title">『자존감 수업』</h3>
+          <p class="card-desc">낮아진 자존감을 천천히 회복하는 52가지 연습.</p>
+        </div>
+      </a>
+
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-self-talk">
+          <span class="thumb-emoji">🎙️</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">무너지지 않는 나</p>
+          <h3 class="card-title">나에게 다정한 말 한 마디</h3>
+          <p class="card-desc">스스로에게 가혹한 당신에게 건네는, 조금 더 부드러운 내면의 언어.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- 04 관계가 힘들 때 -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-row">
+        <h2 class="section-title">관계가 <span class="keyword">힘들 때,</span></h2>
+      </div>
+      <div class="section-divider"></div>
+    </div>
+    <div class="card-grid">
+
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-rel-book">
+          <span class="thumb-emoji">📕</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">최광현</p>
+          <h3 class="card-title">『가족의 두 얼굴』</h3>
+          <p class="card-desc">가장 가까운 관계에서 왜 상처받는지를 심리학으로 풀어내는 책.</p>
+        </div>
+      </a>
+
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-rel-video">
+          <span class="thumb-emoji">🤝</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">유튜브 · 오은영 박사</p>
+          <h3 class="card-title">관계를 망치는 말, 살리는 말</h3>
+          <p class="card-desc">어떤 말 한마디가 관계를 흔드는지, 구체적인 사례로 배우는 대화법.</p>
+        </div>
+      </a>
+
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-rel-essay">
+          <span class="thumb-emoji">🌸</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">Brunch · 관계</p>
+          <h3 class="card-title">멀어지는 것도 관계의 한 방식입니다</h3>
+          <p class="card-desc">억지로 붙들지 않아도 된다고, 조용히 허락해주는 글.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- 05 무기력할 때 -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-row">
+        <h2 class="section-title">무기력이 <span class="keyword">찾아올 때,</span></h2>
+      </div>
+      <div class="section-divider"></div>
+    </div>
+    <div class="card-grid">
+
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-low-book">
+          <span class="thumb-emoji">🌿</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">박진영</p>
+          <h3 class="card-title">『나는 왜 게으른가』</h3>
+          <p class="card-desc">게으름이 의지의 문제가 아닌 이유를 심리학으로 설명하는 책.</p>
+        </div>
+      </a>
+
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-low-video">
+          <span class="thumb-emoji">🚶</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">정신과의사 양재웅</p>
+          <h3 class="card-title">"움직이지 못하는 날을 살아내는 법"</h3>
+          <p class="card-desc">의지가 아닌 환경의 문제로서, 무기력을 다루는 부드러운 방법들.</p>
+        </div>
+      </a>
+
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-low-essay">
+          <span class="thumb-emoji">📄</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">Brunch · 무기력</p>
+          <h3 class="card-title">아무것도 안 한 하루도 충분합니다</h3>
+          <p class="card-desc">쉬는 일에 죄책감을 느끼는 우리에게 건네는 단정한 위로.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- 06 조용한 위로가 필요할 때 -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-row">
+        <h2 class="section-title">조용한 위로가 <span class="keyword">필요할 때,</span></h2>
+      </div>
+      <div class="section-divider"></div>
+    </div>
+    <div class="card-grid">
+
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-comfort-book1">
+          <span class="thumb-emoji">🌍</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">류시화</p>
+          <h3 class="card-title">『지구별 여행자』</h3>
+          <p class="card-desc">길 위에서 만난 작은 이야기들이 마음에 부드러운 자국을 남깁니다.</p>
+        </div>
+      </a>
+
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-comfort-video">
+          <span class="thumb-emoji">🎵</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">시낭송 모음</p>
+          <h3 class="card-title">잠들기 전 듣는 시 한 편</h3>
+          <p class="card-desc">담백한 목소리로 천천히 읊는 시들. 헤드폰 끼고 가만히 들어보세요.</p>
+        </div>
+      </a>
+
+      <a href="#" target="_blank" class="card">
+        <div class="card-thumb thumb-comfort-book2">
+          <span class="thumb-emoji">📙</span>
+        </div>
+        <div class="card-body">
+          <p class="card-source">폴커 키츠 외</p>
+          <h3 class="card-title">『마음의 법칙』</h3>
+          <p class="card-desc">왜 우리는 그렇게 느끼는가. 일상의 감정을 심리학으로 풀어 보는 안내서.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <div class="bottom-space"></div>
+
+</main>
 
     <!-- 푸터 -->
     <footer class="footer">
