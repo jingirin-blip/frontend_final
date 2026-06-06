@@ -7,7 +7,7 @@ body {
 }
 
 /* =========================
-   ✅ 헤더
+   헤더
 ========================= */
 .header {
   display: flex;
@@ -50,7 +50,7 @@ body {
   margin-right: 30px;
 }
 
-/* ✅ 텍스트를 span으로 감싸기 */
+/* 텍스트를 span으로 감싸기 */
 .nav li span {
   display: inline-block;
   padding: 10px 18px;
@@ -62,17 +62,17 @@ body {
   transition: background-color 0.2s ease;
 }
 
-/* ✅ hover */
+/* hover */
 .nav li span:hover {
   background-color: #e2d6c2;
 }
 
-/* ✅ active */
+/* active */
 .nav li.active span {
   background-color: #e2d6c2;
 }
 
-/* ✅ 아래 점 */
+/* 아래 점 */
 .nav li.active span::after {
   content: "";
   width: 6px;
@@ -96,7 +96,195 @@ body {
 /* =========================
    노트 페이지 - journal.html
 ========================= */
-
+.container {
+  width: 860px;
+  margin: 0 auto;
+  padding: 50px 0 80px;
+  text-align: center;
+  color: #322b21;
+}
+ 
+.step-bar {
+  font-size: 0.85em;
+  color: #b3a48a;
+  margin-bottom: 50px;
+}
+ 
+.step-bar .active {
+  color: #322b21;
+  font-weight: bold;
+}
+ 
+h1 {
+  font-size: 1.9em;
+  font-weight: 500;
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+ 
+.subtitle {
+  font-size: 0.95em;
+  color: #8a7e6a;
+  margin-bottom: 50px;
+}
+ 
+.emo-table {
+  margin: 0 auto;
+  border-collapse: separate;
+}
+ 
+.emo-table td {
+  width: 180px;
+  padding: 6px;
+}
+ 
+.emo-link {
+  display: block;
+  background-color: #faf4e6;
+  border: 1px solid #d4c8ad;
+  padding: 30px 15px 22px;
+  text-decoration: none;
+  color: #322b21;
+}
+ 
+.emo-link:hover {
+  background-color: #ebe1cd;
+}
+ 
+.emo-dot {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+}
+ 
+.emo-name {
+  font-size: 1em;
+  font-weight: 500;
+}
+ 
+.write-card {
+  width: 640px;
+  margin: 0 auto;
+  background-color: #faf4e6;
+  border: 1px solid #d4c8ad;
+  padding: 40px 44px;
+  text-align: left;
+}
+ 
+.write-card h2 {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+ 
+.write-hint {
+  font-size: 0.88em;
+  color: #8a7e6a;
+  margin-bottom: 20px;
+}
+ 
+.write-card hr {
+  border: 0;
+  height: 1px;
+  background-color: #d4c8ad;
+  margin: 0 0 26px;
+}
+ 
+.diary-area {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #d4c8ad;
+  background-color: #f3ecde;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.93em;
+  color: #322b21;
+  line-height: 1.8;
+  padding: 12px 14px;
+  resize: vertical;
+}
+ 
+.diary-area:focus {
+  border-color: #8a7e6a;
+}
+ 
+.btn-area {
+  text-align: center;
+  margin-top: 30px;
+}
+ 
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  font-size: 0.93em;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  margin: 0 5px;
+}
+ 
+.btn-dark {
+  background-color: #322b21;
+  color: #faf4e6;
+}
+ 
+.btn-dark:hover {
+  background-color: #5a4f40;
+}
+ 
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #d4c8ad;
+  color: #5a4f40;
+}
+ 
+.btn-outline:hover {
+  background-color: #ebe1cd;
+}
+ 
+.done-card {
+  width: 640px;
+  margin: 0 auto;
+  background-color: #faf4e6;
+  border: 1px solid #d4c8ad;
+  padding: 60px 44px;
+  text-align: center;
+}
+ 
+.done-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #9ba893;
+  margin: 0 auto 30px;
+  font-size: 1.8em;
+  line-height: 60px;
+  color: #fff;
+}
+ 
+.done-card h2 {
+  font-size: 1.65em;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+ 
+.done-card p {
+  font-size: 0.93em;
+  color: #8a7e6a;
+  line-height: 1.85;
+  margin-bottom: 40px;
+}
+ 
+#page1, #page2, #page3 { display: none; }
+#page1 { display: block; }
+#page1:target { display: block; }
+#page2:target { display: block; }
+#page3:target { display: block; }
+#page2:target ~ #page1 { display: none; }
+#page3:target ~ #page2 { display: none; }
+#page3:target ~ #page1 { display: none; }
+ 
 
 /* =========================
    달력 페이지 - calendar.html
@@ -114,7 +302,7 @@ body {
 
 
 /* =========================
-   ✅ 푸터
+   푸터
 ========================= */
 .footer {
   background-color: #efe7d8;
