@@ -1,167 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>아지트: 마음의 결</title>
-  <!-- 폰트 -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif+KR&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아지트: 마음의 결</title>
+    <!-- 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="logo">
+        <div class="circle"></div>
+        <span>아지트 <em>Azit</em></span>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="./index.html"><span>메인</span></a>
+          </li>
+          <li class="active">
+            <a href="./journal.html"><span>노트</span></a>
+          </li>
+          <li>
+            <a href="./calendar.html"><span>달력</span></a>
+          </li>
+          <li>
+            <a href="./introduce.html"><span>소개</span></a>
+          </li>
+          <li>
+            <a href="./recommend.html"><span>추천 콘텐츠</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- 헤더 -->
-  <header class="header">
-    <div class="logo">
-      <div class="circle"></div>
-      <span>아지트 <em>Azit</em></span>
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><span>메인</span></li>
-        <li class="active"><span>노트</span></li>
-        <li><span>달력</span></li>
-        <li><span>소개</span></li>
-        <li><span>추천 콘텐츠</span></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- 메인 -->
-  <main class="main">
-     <!-- =====================================================================
+    <!-- 메인 -->
+    <main class="main">
+      <!-- =====================================================================
        3페이지: 저장 완료
   ===================================================================== -->
-  <div id="page3" class="container">
+      <div id="page3" class="container">
+        <p class="step-bar">
+          ① 감정 고르기 ——— ② 기록하기 ——— <span class="active"> ③ 저장</span>
+        </p>
 
-    <p class="step-bar">
-      ① 감정 고르기 ——— ② 기록하기 ——— <span class="active"> ③ 저장</span>
-    </p>
+        <div class="done-card">
+          <div class="done-icon">✓</div>
 
-    <div class="done-card">
+          <h2>오늘의 결이 잘 담겼어요.</h2>
 
-      <div class="done-icon">✓</div>
+          <p>
+            오늘의 한 줄이 벽걸이 달력 위에 색으로 남았습니다.<br />
+            시간이 쌓이면 그 결이 아지트의 무늬가 될 거예요.
+          </p>
 
-      <h2>오늘의 결이 잘 담겼어요.</h2>
-
-      <p>
-        오늘의 한 줄이 벽걸이 달력 위에 색으로 남았습니다.<br>
-        시간이 쌓이면 그 결이 아지트의 무늬가 될 거예요.
-      </p>
-
-      <a href="calendar.html" class="btn btn-dark">달력 보러가기</a>
-
-    </div>
-
-  </div>
-
-
-  <!-- =====================================================================
-       2페이지: 기록하기
-  ===================================================================== -->
-  <div id="page2" class="container">
-
-    <p class="step-bar">
-      ① 감정 고르기 ——— <span class="active"> ② 기록하기</span> ——— ③ 저장
-    </p>
-
-    <div class="write-card">
-
-      <h2>오늘 마음 속에 남아있는 순간은 무엇인가요?</h2>
-      <p class="write-hint">떠오르는 그대로 적어 보세요. 길게 쓰지 않아도 괜찮습니다.</p>
-
-      <hr>
-
-      <textarea class="diary-area" placeholder="여기에 오늘의 마음을 적어보세요..."></textarea>
-
-      <div class="btn-area">
-        <a href="#page1" class="btn btn-outline">이전</a>
-        <a href="#page3" class="btn btn-dark">오늘의 기록 저장하기</a>
+          <a href="calendar.html" class="btn btn-dark">달력 보러가기</a>
+        </div>
       </div>
 
-    </div>
+      <!-- =====================================================================
+       2페이지: 기록하기
+  ===================================================================== -->
+      <div id="page2" class="container">
+        <p class="step-bar">
+          ① 감정 고르기 ——— <span class="active"> ② 기록하기</span> ——— ③ 저장
+        </p>
 
-  </div>
+        <div class="write-card">
+          <h2>오늘 마음 속에 남아있는 순간은 무엇인가요?</h2>
+          <p class="write-hint">
+            떠오르는 그대로 적어 보세요. 길게 쓰지 않아도 괜찮습니다.
+          </p>
 
+          <hr />
 
-  <!-- =====================================================================
+          <textarea
+            class="diary-area"
+            placeholder="여기에 오늘의 마음을 적어보세요..."
+          ></textarea>
+
+          <div class="btn-area">
+            <a href="#page1" class="btn btn-outline">이전</a>
+            <a href="#page3" class="btn btn-dark">오늘의 기록 저장하기</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- =====================================================================
        1페이지: 감정 고르기 
   ===================================================================== -->
-  <div id="page1" class="container">
+      <div id="page1" class="container">
+        <p class="step-bar">
+          <span class="active">① 감정 고르기</span> ——— ② 기록하기 ——— ③ 저장
+        </p>
 
-    <p class="step-bar">
-      <span class="active">① 감정 고르기</span> ——— ② 기록하기 ——— ③ 저장
-    </p>
+        <h1>책상 앞에 앉았어요.<br />오늘의 마음은 어떤 결인가요?</h1>
+        <p class="subtitle">
+          정답은 없어요. 지금 가장 가까운 한 가지를 골라보세요.
+        </p>
 
-    <h1>책상 앞에 앉았어요.<br>오늘의 마음은 어떤 결인가요?</h1>
-    <p class="subtitle">정답은 없어요. 지금 가장 가까운 한 가지를 골라보세요.</p>
+        <table class="emo-table">
+          <tr>
+            <td>
+              <a href="#page2" class="emo-link">
+                <div class="emo-dot" style="background-color: #9ba893"></div>
+                <p class="emo-name">평온</p>
+              </a>
+            </td>
+            <td>
+              <a href="#page2" class="emo-link">
+                <div class="emo-dot" style="background-color: #d4a86a"></div>
+                <p class="emo-name">기쁨</p>
+              </a>
+            </td>
+            <td>
+              <a href="#page2" class="emo-link">
+                <div class="emo-dot" style="background-color: #c9a59c"></div>
+                <p class="emo-name">설렘</p>
+              </a>
+            </td>
+            <td>
+              <a href="#page2" class="emo-link">
+                <div class="emo-dot" style="background-color: #8fa0a8"></div>
+                <p class="emo-name">슬픔</p>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#page2" class="emo-link">
+                <div class="emo-dot" style="background-color: #a39b8c"></div>
+                <p class="emo-name">불안</p>
+              </a>
+            </td>
+            <td>
+              <a href="#page2" class="emo-link">
+                <div class="emo-dot" style="background-color: #b07058"></div>
+                <p class="emo-name">분노</p>
+              </a>
+            </td>
+            <td>
+              <a href="#page2" class="emo-link">
+                <div class="emo-dot" style="background-color: #b09aa8"></div>
+                <p class="emo-name">외로움</p>
+              </a>
+            </td>
+            <td>
+              <a href="#page2" class="emo-link">
+                <div class="emo-dot" style="background-color: #8a8275"></div>
+                <p class="emo-name">피로</p>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
 
-    <table class="emo-table">
-      <tr>
-        <td>
-          <a href="#page2" class="emo-link">
-            <div class="emo-dot" style="background-color: #9ba893;"></div>
-            <p class="emo-name">평온</p>
-          </a>
-        </td>
-        <td>
-          <a href="#page2" class="emo-link">
-            <div class="emo-dot" style="background-color: #d4a86a;"></div>
-            <p class="emo-name">기쁨</p>
-          </a>
-        </td>
-        <td>
-          <a href="#page2" class="emo-link">
-            <div class="emo-dot" style="background-color: #c9a59c;"></div>
-            <p class="emo-name">설렘</p>
-          </a>
-        </td>
-        <td>
-          <a href="#page2" class="emo-link">
-            <div class="emo-dot" style="background-color: #8fa0a8;"></div>
-            <p class="emo-name">슬픔</p>
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="#page2" class="emo-link">
-            <div class="emo-dot" style="background-color: #a39b8c;"></div>
-            <p class="emo-name">불안</p>
-          </a>
-        </td>
-        <td>
-          <a href="#page2" class="emo-link">
-            <div class="emo-dot" style="background-color: #b07058;"></div>
-            <p class="emo-name">분노</p>
-          </a>
-        </td>
-        <td>
-          <a href="#page2" class="emo-link">
-            <div class="emo-dot" style="background-color: #b09aa8;"></div>
-            <p class="emo-name">외로움</p>
-          </a>
-        </td>
-        <td>
-          <a href="#page2" class="emo-link">
-            <div class="emo-dot" style="background-color: #8a8275;"></div>
-            <p class="emo-name">피로</p>
-          </a>
-        </td>
-      </tr>
-    </table>
-
-  </div>
-  </main>
-
-  
-  <!-- 푸터 -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p>마음의 결</p>
-      <p>A gentle journal for everyday emotions · 2026</p>
-    </div>
-  </footer>
-
-</body>
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>마음의 결</p>
+        <p>A gentle journal for everyday emotions · 2026</p>
+      </div>
+    </footer>
+  </body>
 </html>

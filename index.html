@@ -1,84 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>아지트: 마음의 결</title>
-  <!-- 폰트 -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif+KR&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- 헤더 -->
-  <header class="header">
-    <div class="logo">
-      <div class="circle"></div>
-      <span>아지트 <em>Azit</em></span>
-    </div>
-    <nav class="nav">
-      <ul>
-        <li class="active"><span>메인</span></li>
-        <li><span>노트</span></li>
-        <li><span>달력</span></li>
-        <li><span>소개</span></li>
-        <li><span>추천 콘텐츠</span></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- 메인 -->
-  <main class="main">
-      <section class="intro">
-    <div class="intro-text">
-      <p class="welcome">Welcome to your own little hideout</p>
-      <h1>
-        오늘 하루,<br>
-        내 작은 <em>아지트</em>로<br>
-        돌아오는 시간.
-      </h1>
-      <p class="description">
-        문을 열면 익숙한 책상과 책장, 창밖의 나무.
-        방 안의 사물 하나하나가 오늘의 마음을 돌보는
-        작은 도구가 됩니다.
-      </p>
-
-      <!-- 파란 박스 -->
-      <div class="steps-box">
-        <div class="step-item">
-          <span class="step-num">01</span>
-          <p>책상에 앉아 오늘의 감정을 적습니다</p>
-        </div>
-        <div class="step-item">
-          <span class="step-num">02</span>
-          <p>벽걸이 달력에 마음의 결이 쌓입니다</p>
-        </div>
-        <div class="step-item">
-          <span class="step-num">03</span>
-          <p>책장에서 위로를 꺼내 읽습니다</p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아지트: 마음의 결</title>
+    <!-- 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="logo">
+        <div class="circle"></div>
+        <span>아지트 <em>Azit</em></span>
       </div>
-    </div>
+      <nav class="nav">
+        <ul>
+          <li class="active">
+            <a href="./index.html"><span>메인</span></a>
+          </li>
+          <li>
+            <a href="./journal.html"><span>노트</span></a>
+          </li>
+          <li>
+            <a href="./calendar.html"><span>달력</span></a>
+          </li>
+          <li>
+            <a href="introduce.html"><span>소개</span></a>
+          </li>
+          <li>
+            <a href="./recommend.html"><span>추천 콘텐츠</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="room-image">
-      <img src="room.png" usemap="#roommap" alt="아지트 방">
-      <map name="roommap">
-        <area shape="rect" coords="0,0,220,850" href="recommend.html" alt="추천 콘텐츠">
-        <area shape="rect" coords="235,45,330,230" href="calendar.html" alt="달력">
-        <area shape="rect" coords="390,840,650,1030" href="journal.html" alt="노트">
-      </map>
-    </div>
-  </section>
-  </main>
+    <!-- 메인 -->
+    <main class="main">
+      <section class="intro">
+        <div class="intro-text">
+          <p class="welcome">Welcome to your own little hideout</p>
+          <h1>
+            오늘 하루,<br />
+            내 작은 <em>아지트</em>로<br />
+            돌아오는 시간.
+          </h1>
+          <p class="description">
+            문을 열면 익숙한 책상과 책장, 창밖의 나무. 방 안의 사물 하나하나가
+            오늘의 마음을 돌보는 작은 도구가 됩니다.
+          </p>
 
-  
-  <!-- 푸터 -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p>마음의 결</p>
-      <p>A gentle journal for everyday emotions · 2026</p>
-    </div>
-  </footer>
+          <!-- 파란 박스 -->
+          <div class="steps-box">
+            <div class="step-item">
+              <span class="step-num">01</span>
+              <p>책상에 앉아 오늘의 감정을 적습니다</p>
+            </div>
+            <div class="step-item">
+              <span class="step-num">02</span>
+              <p>벽걸이 달력에 마음의 결이 쌓입니다</p>
+            </div>
+            <div class="step-item">
+              <span class="step-num">03</span>
+              <p>책장에서 위로를 꺼내 읽습니다</p>
+            </div>
+          </div>
+        </div>
 
-</body>
+        <div class="room-image">
+          <img src="room.png" usemap="#roomMap" alt="내 방" width="700" />
+
+          <map name="roomMap">
+            <!-- 달력 (좌상단) -->
+            <area
+              shape="rect"
+              coords="148,33,201,136"
+              href="./calendar.html"
+              alt="달력"
+              title="달력"
+            />
+
+            <!-- 책장 (왼쪽 전체) -->
+            <area
+              shape="rect"
+              coords="0,0,113,415"
+              href="./recommend.html"
+              alt="책장"
+              title="책장"
+            />
+
+            <!-- 노트 (책상 위) -->
+            <area
+              shape="rect"
+              coords="249,542,388,625"
+              href="./journal.html"
+              alt="노트"
+              title="노트"
+            />
+          </map>
+        </div>
+      </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>마음의 결</p>
+        <p>A gentle journal for everyday emotions · 2026</p>
+      </div>
+    </footer>
+  </body>
 </html>
