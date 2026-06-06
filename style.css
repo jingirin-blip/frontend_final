@@ -1,7 +1,7 @@
 /* 기본 설정 */
 body {
   margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   background-color: #f4efe6;
   line-height: 1.6;
 }
@@ -103,41 +103,41 @@ body {
   text-align: center;
   color: #322b21;
 }
- 
+
 .step-bar {
   font-size: 0.85em;
   color: #b3a48a;
   margin-bottom: 50px;
 }
- 
+
 .step-bar .active {
   color: #322b21;
   font-weight: bold;
 }
- 
+
 h1 {
   font-size: 1.9em;
   font-weight: 500;
   line-height: 1.65;
   margin-bottom: 14px;
 }
- 
+
 .subtitle {
   font-size: 0.95em;
   color: #8a7e6a;
   margin-bottom: 50px;
 }
- 
+
 .emo-table {
   margin: 0 auto;
   border-collapse: separate;
 }
- 
+
 .emo-table td {
   width: 180px;
   padding: 6px;
 }
- 
+
 .emo-link {
   display: block;
   background-color: #faf4e6;
@@ -146,23 +146,23 @@ h1 {
   text-decoration: none;
   color: #322b21;
 }
- 
+
 .emo-link:hover {
   background-color: #ebe1cd;
 }
- 
+
 .emo-dot {
   width: 65px;
   height: 65px;
   border-radius: 50%;
   margin: 0 auto 16px;
 }
- 
+
 .emo-name {
   font-size: 1em;
   font-weight: 500;
 }
- 
+
 .write-card {
   width: 640px;
   margin: 0 auto;
@@ -171,49 +171,49 @@ h1 {
   padding: 40px 44px;
   text-align: left;
 }
- 
+
 .write-card h2 {
   font-size: 1.2em;
   font-weight: 500;
   line-height: 1.7;
   margin-bottom: 8px;
 }
- 
+
 .write-hint {
   font-size: 0.88em;
   color: #8a7e6a;
   margin-bottom: 20px;
 }
- 
+
 .write-card hr {
   border: 0;
   height: 1px;
   background-color: #d4c8ad;
   margin: 0 0 26px;
 }
- 
+
 .diary-area {
   width: 100%;
   height: 200px;
   border: 1px solid #d4c8ad;
   background-color: #f3ecde;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 0.93em;
   color: #322b21;
   line-height: 1.8;
   padding: 12px 14px;
   resize: vertical;
 }
- 
+
 .diary-area:focus {
   border-color: #8a7e6a;
 }
- 
+
 .btn-area {
   text-align: center;
   margin-top: 30px;
 }
- 
+
 .btn {
   display: inline-block;
   padding: 12px 26px;
@@ -223,26 +223,26 @@ h1 {
   border: none;
   margin: 0 5px;
 }
- 
+
 .btn-dark {
   background-color: #322b21;
   color: #faf4e6;
 }
- 
+
 .btn-dark:hover {
   background-color: #5a4f40;
 }
- 
+
 .btn-outline {
   background-color: transparent;
   border: 1px solid #d4c8ad;
   color: #5a4f40;
 }
- 
+
 .btn-outline:hover {
   background-color: #ebe1cd;
 }
- 
+
 .done-card {
   width: 640px;
   margin: 0 auto;
@@ -251,7 +251,7 @@ h1 {
   padding: 60px 44px;
   text-align: center;
 }
- 
+
 .done-icon {
   width: 60px;
   height: 60px;
@@ -262,44 +262,263 @@ h1 {
   line-height: 60px;
   color: #fff;
 }
- 
+
 .done-card h2 {
   font-size: 1.65em;
   font-weight: 500;
   margin-bottom: 18px;
 }
- 
+
 .done-card p {
   font-size: 0.93em;
   color: #8a7e6a;
   line-height: 1.85;
   margin-bottom: 40px;
 }
- 
-#page1, #page2, #page3 { display: none; }
-#page1 { display: block; }
-#page1:target { display: block; }
-#page2:target { display: block; }
-#page3:target { display: block; }
-#page2:target ~ #page1 { display: none; }
-#page3:target ~ #page2 { display: none; }
-#page3:target ~ #page1 { display: none; }
- 
+
+#page1,
+#page2,
+#page3 {
+  display: none;
+}
+#page1 {
+  display: block;
+}
+#page1:target {
+  display: block;
+}
+#page2:target {
+  display: block;
+}
+#page3:target {
+  display: block;
+}
+#page2:target ~ #page1 {
+  display: none;
+}
+#page3:target ~ #page2 {
+  display: none;
+}
+#page3:target ~ #page1 {
+  display: none;
+}
 
 /* =========================
    달력 페이지 - calendar.html
 ========================= */
+/* ==========================================
+   ★ 달력 페이지 (calendar.html) 전용 스타일
+   ========================================== */
 
+/* 공통 body와 중복되는 마진, 배경색, 그리고 다른 폰트 선언을 삭제했습니다. */
+body {
+  color: #333;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+.eyebrow {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #8a8377;
+  margin-bottom: 10px;
+}
+h1 {
+  color: #2a241e;
+  font-size: 36px;
+  margin: 0;
+}
+
+/* 달력 크기 및 정렬 */
+table {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 950px;
+  background-color: white;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #e0dcdb;
+  padding: 15px;
+  width: 14%;
+  box-sizing: border-box;
+}
+th {
+  background-color: #fbfbfa;
+  text-align: center;
+  font-weight: bold;
+  color: #5a534a;
+  padding: 18px 0;
+}
+td {
+  height: 130px;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* 날짜 숫자 스타일 */
+.date-num {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* 칸 어디를 눌러도 작동하는 링크 테크닉 */
+.recorded-cell {
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+/* 칸 전체를 덮어버리는 보이지 않는 투명 링크 레이어 */
+.full-cell-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+/* 마우스를 기록이 있는 '칸'에 올렸을 때의 시각 효과 */
+.recorded-cell:hover {
+  background-color: #fffaf0;
+  cursor: pointer;
+}
+.recorded-cell:hover .date-num {
+  color: #c87a6b;
+  text-decoration: underline;
+}
+
+/* 감정 색상 원형 박스 */
+.color-box {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+/* 감정별 색상 정의 */
+.calm {
+  background-color: #d2e5df;
+}
+.joy {
+  background-color: #f6e9be;
+}
+.flutter {
+  background-color: #f5c6cb;
+}
+.sadness {
+  background-color: #c6dbec;
+}
+.anxiety {
+  background-color: #ddd4ec;
+}
+.anger {
+  background-color: #f5c9c5;
+}
+.lonely {
+  background-color: #e2e5e8;
+}
+.fatigue {
+  background-color: #eddcc9;
+}
+
+/* 하단 범례 목록 스타일 */
+ul.legend {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 35px;
+}
+ul.legend li {
+  display: inline-block;
+  margin: 0 12px;
+  font-size: 14px;
+  color: #5a534a;
+}
+
+/* ==========================================
+   화면 위에 뜨는 일기 팝업 창 (모달) 스타일
+   ========================================== */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-overlay:target {
+  display: flex;
+}
+
+.modal-card {
+  background-color: white;
+  width: 90%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.close-icon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  color: #aaa;
+  text-decoration: none;
+  line-height: 1;
+}
+.close-icon:hover {
+  color: #333;
+}
+
+.modal-card h3 {
+  font-size: 20px;
+  color: #2a241e;
+  margin: 0 0 8px 0;
+}
+.modal-emotion {
+  font-size: 14px;
+  color: #666;
+}
+.modal-emotion .color-box {
+  margin-right: 5px;
+}
+.modal-divider {
+  border: 0;
+  height: 1px;
+  background-color: #eedec9;
+  margin: 15px 0;
+}
+.modal-content {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+}
 
 /* =========================
    소개 페이지 - introduce.html
 ========================= */
 
-
 /* =========================
    추천 콘텐츠 - recommend.html
 ========================= */
-
 
 /* =========================
    푸터
@@ -311,7 +530,7 @@ h1 {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 
-  font-family: 'Noto Serif KR', serif;
+  font-family: "Noto Serif KR", serif;
 }
 
 /* 푸터 텍스트 */
