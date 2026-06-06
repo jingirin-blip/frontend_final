@@ -89,8 +89,86 @@ body {
    메인 페이지 - index.html
 ========================= */
 .main {
-  min-height: 700px;
-  padding: 60px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+ 
+/* 좌우 레이아웃 */
+.intro {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+ 
+/* 왼쪽 */
+.intro-text {
+  flex: 1;
+}
+ 
+.welcome {
+  color: #b07a56;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+ 
+.intro-text h1 {
+  font-size: 60px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+ 
+.intro-text em {
+  color: #6e7b5f;
+  font-style: normal;
+}
+ 
+.description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #5f5747;
+  margin-bottom: 0;
+}
+ 
+/* 단계 */
+.steps-box {
+  border: 1.5px solid #dcdfd2;
+  border-radius: 12px;
+  padding: 24px 30px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+ 
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+ 
+.step-num {
+  font-size: 22px;
+  font-style: italic;
+  color: #3a3a3a;
+  min-width: 36px;
+}
+ 
+.step-item p {
+  margin: 0;
+  font-size: 15px;
+  color: #5f5747;
+  line-height: 1.6;
+}
+ 
+/* 오른쪽 */
+.room-image {
+  flex: 1;
+}
+ 
+.room-image img {
+  width: 100%;
+  border-radius: 25px;
 }
 
 /* =========================
